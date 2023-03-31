@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+
+    /*inicio*/
+}
+html {
+    font-size: 62.5;
+
+
+}
+
+body {
+  background-color: darkgray;
+ 
+}
+     
+  .nav li {
+    color: blanchedalmond;
+    background-color: rgb(136, 142, 231);
+    border-radius: 15px;
+    padding: 0.5px 10px;
+    display: -webkit-inline-box;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    cursor: pointer;
+    
+  }
+ 
+  .nav li a:hover {
+    background-color: #e7e97f;
+    
+  }
+
+  .title {
+    padding: 2%;
+    margin: 2px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(108, 126, 9, 0.2);
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+
+  .title-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .responsive-banner {
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #7a6c74, #368686);
+  }
+ 
+  img {
+    max-width : 100%;
+    min-width: auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  p {
+    font-size: 3rem;
+  }s
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.2);
+    overflow: hidden;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+  
+  .card:last-child {
+    margin-right: 0px;
+  }
+  
+  .card img {
+    display: block;
+    height: 550px;
+    width: 600%;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    border-left: 10px;
+    border-right: 10px;
+  }
+  
+  .Misión, .Visión {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin: 1px;
+  }
+  
+  .card-content p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .footer-inicio {
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+  }
+
+ 
+  /*Multimedia*/
+
+.container{
+  margin: auto;
+  max-width: max-content;
+  background-color: rgb(168, 224, 154);
+  width: 30%;
+  padding: 1px;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .10s;
+  text-decoration: none;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; 
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 20px;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/*videos*/ 
+
+.video iframe {
+  padding: 1%;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  
+}
+
+.map-container iframe {
+  padding: auto;
+  width: 100%;
+  height: 100%;
+  border: 1px;
+}
+
+.card2, p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  padding: 2%;
+  font-size: 3rem;
+
+}
+
+.card2, h1 {
+  padding: 2%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+
+.card2-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card2 {
+  border-radius: 15px;
+  box-shadow: 0 6px 8px rgba(42, 70, 35, 0.2);
+  overflow: hidden;
+  overflow-block: 10px;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  border-left: 10pxs;
+  border-right: 10px;
+}
+
+.card2:last-child {
+  margin-right: 50px;
+}
+
+
+
+.footer-multimedia {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+}
+
+/* Formulario de Inscripción*/
+
+  .formulario  {
+    padding: 0.5px;
+    font-size: 3.5rem;
+    text-align: center;
+            
+  }
+ 
+  
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgb(191, 216, 195);
+  border-radius: 40px;
+  font-size: 1.5rem;
+  font-style: oblique;
+  font-weight: 600;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 768px  
+}
+
+input[type="nombre"],
+input[type="apellido"],
+input[type="edad"], 
+input[type="email"],
+input[type="tel"],
+input[type="ciudad"],
+input[list="pais"],
+input[list="Información"]{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 0.5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 1600;
+}
+
+
+input[type="submit"] {
+  background-color: #28e0106e;
+  color: rgb(9, 0, 0);
+  align-items: right;
+  padding: 10px 20px;
+  border: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.textarea_mensaje {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  
+}
+
+
+.footer-form p {
+  padding: 0;
+  color: rgb(10, 7, 7);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+

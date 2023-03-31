@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forulario de inscripción</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <nav>
+                    <H1 class="formulario">Formulario de Inscripción</H1>
+                </nav clas="nav1">
+                <li class="nav-container"><a href="indexinicio.html">Inicio</a></li>
+                <li class="nav-container"><a href="culturafelina.html">Cultura felina</a></li>
+                <li class="nav-container"><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="nombre" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="apellido" id="apellido" name="apellido" required>
+
+                <label for="edad">Edad:</label>
+                <input type="edad" id="edad" name="edad" min="10" max="99" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="ciudad" id="ciudad" name="ciudad" required>
+                    
+                <label for="pais">Pais:</label>
+                <input list="pais">
+                <datalist id="pais">
+                    <option value="">Selecciona un país</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="España">España</option>
+                    <option value="Mexíco">Mexíco</option>
+                </datalist>
+                
+                <label for="Información">Información:</label>
+                <input list="Información">
+                <datalist id="Información">
+                    <option value="">Adopción</option>
+                    <option value="Veterinaria">Veterinaria</option>
+                    <option value="Lenguaje Corporal">Lenguaje Corporal</option>
+                    <option value="Alimentos">Alimentos</option>
+                    <option value="Arenas">Arenas</option>
+                    <option value="Otro">Otro</option>
+                </datalist>    
+                 
+          
+
+                <label class="label-textarea" for="mensaje">Mensaje:</label>
+                <textarea class="textarea_mensaje" id="mensaje" name="mensaje" rows="7" cols="35"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <hr>
+        <footer class="footer-form">
+            <div>
+            <p>Celular: xxxxxx</p>
+            <p>Whatsapp: xxxxxx</p>
+            <p>Direcció Carrera xxx calle xxx N° xxxx</p>
+            </div>
+        </footer>
+        <hr>
+    </main>
+</body>
+
+</html>
