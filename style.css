@@ -8,13 +8,10 @@
 }
 html {
     font-size: 62.5;
-
-
 }
 
 body {
   background-color: darkgray;
- 
 }
      
   .nav li {
@@ -53,7 +50,7 @@ body {
 
   .title-title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
   
@@ -71,9 +68,7 @@ body {
     position: relative;
   }
   
-  p {
-    font-size: 3rem;
-  }s
+  
   
   .card-container {
     display: flex;
@@ -105,17 +100,25 @@ body {
     padding: 20px;
     border-left: 10px;
     border-right: 10px;
+    font-size: 1rem;
   }
   
+  .card-text  {
+    font-size: 2rem;
+  }
+   
+  .card-title,.title-title {
+    font-size: 2rem;
+  }
   .Misión, .Visión {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 1px;
   }
   
   .card-content p {
-    font-size: 18px;
+    font-size: 2rem;
     margin: 0;
   }
   
@@ -125,7 +128,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: #ccc;
+    background-color: #e4e70c;
   }
 
  
@@ -133,23 +136,22 @@ body {
 
 .container{
   margin: auto;
-  max-width: max-content;
-  background-color: rgb(168, 224, 154);
-  width: 30%;
+  background-color: rgb(247, 252, 246);
+  width: 100%;
   padding: 1px;
 }
 
 ul.slider{
   position: relative;
-  width: 800px;
-  height: 300px;
+  width: 100%;
+  height: 550px;
 }
 
 ul.slider li {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
+  left: 10px;
+  top: 10px;
+  opacity: 10%;
   width: inherit;
   height: inherit;
   transition: opacity .10s;
@@ -158,7 +160,7 @@ ul.slider li {
 
 ul.slider li img{
   width: 100%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -193,12 +195,11 @@ ul.slider li:target {
   border-radius: 100%;
 }
 
-/*videos*/ 
-
 .video iframe {
   padding: 1%;
   border-radius: 2px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
   
 }
 
